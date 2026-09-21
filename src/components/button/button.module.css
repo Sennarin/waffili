@@ -1,0 +1,19 @@
+.button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	max-width: fit-content;
+	padding: 16px 24px;
+	color: white;
+	border: 1px solid #ff2ea1;
+	background-color: #ff2ea1;
+	border-radius: 34px;
+	cursor: pointer;
+	transition: all 250ms ease;
+	&:focus,
+	&:hover {
+		background-color: #6b2ea1;
+		box-shadow: 0 0 10px #ff2ea1, 0 0 20px #ff2ea1;
+	}
+}

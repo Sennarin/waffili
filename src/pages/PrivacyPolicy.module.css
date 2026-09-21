@@ -1,0 +1,7 @@
+.privacy_policy {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	color: white;
+	padding: 60px 0;
+}

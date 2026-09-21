@@ -1,0 +1,19 @@
+.buttonUp {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 100%;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
+	z-index: 1000;
+	background-color: #1b191a;
+	cursor: pointer;
+	transition: all 250ms ease;
+
+	&:focus,
+	&:hover {
+		background-color: #ef97e8;
+		box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8;
+	}
+}

@@ -1,0 +1,51 @@
+.footer {
+	width: 100%;
+	padding: 60px 0;
+}
+
+.footer___nav {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	padding: 60px 0;
+}
+.footer___logoDiv {
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+	align-items: center;
+	@media screen and (min-width: 400px) {
+		flex-direction: row;
+		gap: 32px;
+	}
+}
+
+.footer___logo {
+	height: min-content;
+	display: flex;
+	align-items: center;
+}
+
+.footer___mainBtn {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		gap: 32px;
+	}
+
+	align-items: center;
+	a {
+		font-size: 14px;
+		text-decoration: none;
+		height: min-content;
+		color: white;
+		transition: color 250ms linear;
+		&:hover,
+		&:focus {
+			color: #6b2ea1;
+		}
+	}
+}

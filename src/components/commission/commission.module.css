@@ -1,0 +1,40 @@
+.commission {
+	padding: 60px 0;
+	h2 {
+		color: white;
+		font-size: 32px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	@media screen and (min-width: 768px) {
+		padding: 100px 0;
+	}
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+}
+
+.card {
+	border-radius: 24px;
+	background-color: #101112;
+	padding: 40px 32px;
+	max-width: 356px;
+	border-top: 1px solid #ff2ea1;
+	border-radius: 24px;
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+	justify-content: center;
+	h3 {
+		color: white;
+		font-size: 24px;
+	}
+}
+
+.accent {
+	color: #ff2ea1;
+}
