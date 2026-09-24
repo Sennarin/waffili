@@ -1,26 +1,24 @@
-import Button from '../button/button'
 import css from './connect.module.css'
 import ConnectForm from './connectForm/connectForm'
+
 export default function Connect() {
 	return (
 		<section id='contact' className={css.contact}>
+			<img src='/img/contact-bg.png' alt='' className={css.bgImg} />
 			<div className='container'>
 				<div className={css.container__inner}>
 					<div className={css.contact__info}>
-						<h2>Connect with Us</h2>
-						<p>Talk To Us Anytime</p>
+						<h2>Let’s Talk About Your Traffic</h2>
 						<div className={css.contact__links}>
-							<a href='mailto:affiliates@7o.casino' className={css.hover}>
+							<a href='mailto:affiliates@wgraff.com' className={css.hover}>
 								<img src='/envelope.svg' alt='envelope icon' />
-								affiliates@7o.casino
+								affiliates@wgraff.com
 							</a>
-							<a href='https://t.me/aff7_oasis' className={css.hover}>
+							<a href='https://t.me/johnnyquid4' className={css.hover}>
 								<img src='/comments.svg' alt='comments icon' />
-								Telegram
+								@johnnyquid4
 							</a>
 						</div>
-
-						<Button> Become a Partner</Button>
 					</div>
 					<ConnectForm />
 				</div>

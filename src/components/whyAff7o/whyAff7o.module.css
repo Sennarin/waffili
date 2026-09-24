@@ -1,20 +1,76 @@
 .whyAff7o {
 	padding: 60px 0;
-	h2 {
-		font-size: 32px;
-		font-weight: 400;
-		text-align: center;
-		margin-bottom: 40px;
-		color: white;
-	}
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
 	}
 }
 
-.cards {
+.inner {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	justify-content: space-between;
+	@media screen and (min-width: 1140px) {
+		flex-direction: row;
+	}
+}
+
+.globe {
+	max-width: 451px;
+	width: 100%;
+}
+.globe img {
+	width: 100%;
+	height: auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
 	gap: 24px;
-	justify-content: center;
+	max-width: 585px;
+}
+
+.content h2 {
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 24px;
+	text-transform: capitalize;
+	color: var(--color-grey);
+	@media screen and (min-width: 768px) {
+		font-size: 34px;
+	}
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.stats li {
+	display: flex;
+	flex-direction: column;
+}
+
+.value {
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 40px;
+	color: var(--color-white);
+	text-transform: capitalize;
+	@media screen and (min-width: 768px) {
+		font-size: 56px;
+	}
+}
+
+.label {
+	font-family: var(--font-body);
+	color: var(--color-grey);
+	font-size: 18px;
+	@media screen and (min-width: 768px) {
+		font-size: 22px;
+	}
 }

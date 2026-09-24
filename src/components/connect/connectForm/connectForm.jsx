@@ -4,8 +4,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
-import Icon from '../../../assets/play.svg?react'
 import css from './connectForm.module.css'
+
+// TODO: replace with the real WiniGreat partner-signup API once the backend is live.
+const PARTNER_SIGNUP_ENDPOINT = 'TODO_BACKEND_URL/api/partner'
 
 export default function ConnectForm() {
 	const [showPassword, setShowPassword] = useState(false)
@@ -18,9 +20,9 @@ export default function ConnectForm() {
 				phone: '',
 				email: '',
 				address: '',
+				telegram: '',
 				password: '',
 				password_confirmation: '',
-				skype: '',
 				terms_accepted: false,
 			}}
 			validationSchema={Yup.object({
@@ -29,11 +31,11 @@ export default function ConnectForm() {
 				phone: Yup.string().required('Required'),
 				email: Yup.string().email('Invalid email').required('Required'),
 				address: Yup.string().required('Required'),
+				telegram: Yup.string().required('Required'),
 				password: Yup.string().min(6).required('Required'),
 				password_confirmation: Yup.string()
 					.oneOf([Yup.ref('password')], 'Passwords must match')
 					.required('Required'),
-				skype: Yup.string().required('Required'),
 				terms_accepted: Yup.boolean().oneOf(
 					[true],
 					'You must accept the terms'
@@ -41,12 +43,9 @@ export default function ConnectForm() {
 			})}
 			onSubmit={async (values, { resetForm }) => {
 				try {
-					const response = await axios.post(
-						'https://admin.aff7o.com/api/client/partner',
-						{
-							partner_user: values,
-						}
-					)
+					const response = await axios.post(PARTNER_SIGNUP_ENDPOINT, {
+						partner_user: values,
+					})
 
 					if (response.status === 200 || response.status === 201) {
 						toast.success(
@@ -72,7 +71,7 @@ export default function ConnectForm() {
 				<Form className={css.form}>
 					<div className={css.row}>
 						<label className={css.flex1}>
-							<span className={css.labelText}>Full Name *</span>
+							<span className={css.labelText}>Name *</span>
 							<Field
 								name='full_name'
 								placeholder='Enter name'
@@ -135,7 +134,27 @@ export default function ConnectForm() {
 							placeholder='Enter address'
 							className={css.input}
 						/>
+						<ErrorMessage
+							name='address'
+							component='div'
+							className={css.error}
+						/>
 					</label>
+
+					<label className={css.labelWithIcon}>
+						<span className={css.labelText}>Telegram *</span>
+						<Field
+							name='telegram'
+							placeholder='Enter telegram'
+							className={css.input}
+						/>
+						<ErrorMessage
+							name='telegram'
+							component='div'
+							className={css.error}
+						/>
+					</label>
+
 					<label className={css.labelWithIcon}>
 						<span className={css.labelText}>Password *</span>
 						<div className={css.inputWrap}>
@@ -174,7 +193,7 @@ export default function ConnectForm() {
 					</label>
 
 					<label className={css.labelWithIcon}>
-						<span className={css.labelText}>Confirm Password *</span>
+						<span className={css.labelText}>Repeat password *</span>
 						<div className={css.inputWrap}>
 							<Field
 								name='password_confirmation'
@@ -209,15 +228,7 @@ export default function ConnectForm() {
 							className={css.error}
 						/>
 					</label>
-					<label className={css.labelWithIcon}>
-						<span className={css.labelText}>Telegram *</span>
-						<Field
-							name='skype'
-							placeholder='Enter telegram'
-							className={css.input}
-						/>
-						<ErrorMessage name='skype' component='div' className={css.error} />
-					</label>
+
 					<div>
 						<label className={css.checkboxWrap}>
 							<Field
@@ -242,7 +253,6 @@ export default function ConnectForm() {
 
 					<button type='submit' className={css.button}>
 						Become a Partner
-						<Icon className={css.icon} />
 					</button>
 				</Form>
 			)}

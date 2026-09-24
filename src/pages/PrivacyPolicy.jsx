@@ -12,12 +12,13 @@ export default function PrivacyPolicy() {
 					<h2>Privacy Policy</h2>
 					<p>
 						This Privacy Policy explains why and how we collect, use, and
-						process the information you provide when using the Aff7o Affiliates
-						website (aff7o.com) (hereinafter referred to as “the Website”).
+						process the information you provide when using the WiniGreat
+						Affiliates website (wgraff.com) (hereinafter referred to as “the
+						Website”).
 					</p>
 					<p>
-						Any reference to “aff7o.com,” “us,” “we,” or “our” includes
-						7o.casino, a company owned and operated byS ilent Signal Systems
+						Any reference to “wgraff.com,” “us,” “we,” or “our” includes
+						WiniGreat, a company owned and operated byS ilent Signal Systems
 						Group Limited, a company incorporated under the laws of Hong Kong,
 						reg. no 78041808, having its registered office at Unit C, 8/F, King
 						Palace Plaza No. 55 King Yip Street, Kwun Tong, Kowloon, Hong Kong
@@ -141,10 +142,10 @@ export default function PrivacyPolicy() {
 						Policy or would like to exercise your rights regarding your personal
 						data, please contact us via email at:{' '}
 						<a
-							href='mailto:affiliates@7o.casino'
+							href='mailto:affiliates@wgraff.com'
 							style={{ textDecoration: 'underline' }}
 						>
-							affiliates@7o.casino
+							affiliates@wgraff.com
 						</a>
 					</p>
 				</section>

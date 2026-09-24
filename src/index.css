@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
+
+:root {
+	--color-bg: #0a0617;
+	--color-surface: #0f091c;
+	--color-surface-alt: #1c1026;
+	--color-primary: #62199d;
+	--color-primary-hover: #7c2ec4;
+	--color-secondary-btn: #25162c;
+	--color-accent: #f4d482;
+	--color-white: #ffffff;
+	--color-grey: #aaaaaa;
+	--color-grey-light: #c5c5c5;
+	--color-border-accent: #260543;
+	--color-black: #0b0b0c;
+	--font-heading: 'Baloo 2', sans-serif;
+	--font-body: 'Poppins', sans-serif;
+}
 
 .container {
 	width: 100%;
@@ -17,11 +34,11 @@ body {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-family: 'Poppins';
+	font-family: var(--font-body);
 	font-size: 16px;
 	letter-spacing: 0;
-	background-color: #030308;
-	color: #c5c5c5;
+	background-color: var(--color-bg);
+	color: var(--color-grey-light);
 }
 
 /*Normalize styles*/
@@ -63,4 +80,21 @@ canvas,
 svg {
 	display: block;
 	max-width: 100%;
+}
+
+/* Shared crop frame for the WiniGreat wordmark: the source PNG has extra
+   padding/glow around the mark, so it's zoomed via these fixed offsets.
+   Set width/height on the element to size it per placement. */
+.logo-frame {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.logo-frame img {
+	position: absolute;
+	top: -95.65%;
+	left: -33.8%;
+	width: 166.96%;
+	height: 318.01%;
+	max-width: none;
 }

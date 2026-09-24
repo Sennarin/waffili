@@ -7,15 +7,15 @@ export default function Terms() {
 	}, [])
 	return (
 		<main className={css.terms}>
-			<div class='container '>
+			<div className='container'>
 				<h1>Terms and Conditions</h1>
 				<h3 className={css.subtitle}>
 					VERSION 1.0 EFFECTIVE FROM [02.04.2025]
 				</h3>
 				<p>
 					This Affiliate Agreement ("Agreement") outlines the terms and
-					conditions between you ("Affiliate") and Aff7o ("We", "Us", "Company",
-					“Affiliate Program”).
+					conditions between you ("Affiliate") and WiniGreat ("We", "Us",
+					"Company", “Affiliate Program”).
 				</p>
 				<p>
 					By registering for our Affiliate Program and using our marketing
@@ -236,7 +236,7 @@ export default function Terms() {
 					</p>
 					<p>2.5 Valid Traffic and Good Faith</p>
 					<p>
-						Use of branded keywords (e.g. "7oasis ") in contextual advertising
+						Use of branded keywords (e.g. "WiniGreat") in contextual advertising
 						(e.g. Google Ads) is strictly prohibited.
 					</p>
 					<p>
@@ -649,8 +649,8 @@ export default function Terms() {
 					</p>
 					<p>6.12. Available payment methods.</p>
 					<p>
-						Within affiliate program of Aff7o can withdraw their commission
-						funds using the following payment methods:
+						Within the WiniGreat affiliate program, partners can withdraw their
+						commission funds using the following payment methods:
 					</p>
 					<p>Bank Transfer</p>
 					<p>Crypto</p>

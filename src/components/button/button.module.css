@@ -1,19 +1,37 @@
 .button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	gap: 10px;
-	font-weight: 600;
+	justify-content: center;
 	max-width: fit-content;
-	padding: 16px 24px;
-	color: white;
-	border: 1px solid #ff2ea1;
-	background-color: #ff2ea1;
+	padding: 9px 16px;
 	border-radius: 34px;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--color-white);
+	text-transform: capitalize;
+	white-space: nowrap;
 	cursor: pointer;
-	transition: all 250ms ease;
-	&:focus,
-	&:hover {
-		background-color: #6b2ea1;
-		box-shadow: 0 0 10px #ff2ea1, 0 0 20px #ff2ea1;
+	transition: filter 250ms ease, box-shadow 250ms ease;
+}
+
+.primary {
+	background-color: var(--color-primary);
+	&:hover,
+	&:focus {
+		filter: brightness(1.15);
+		box-shadow: 0 0 16px rgba(98, 25, 157, 0.6);
 	}
+}
+
+.secondary {
+	background-color: var(--color-secondary-btn);
+	&:hover,
+	&:focus {
+		filter: brightness(1.4);
+	}
+}
+
+.large {
+	padding: 13px 16px;
 }

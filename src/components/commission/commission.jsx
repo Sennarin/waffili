@@ -1,40 +1,78 @@
 import css from './commission.module.css'
 
+const leftTiers = [
+	{
+		name: 'CPA',
+		value: 'Up to €700',
+		text: 'Competitive CPA rates tailored to your traffic',
+	},
+	{
+		name: 'RevShare',
+		value: 'Up to 55%',
+		text: 'Lifetime revenue with no hidden fees',
+	},
+]
+
+const rightTiers = [
+	{
+		name: 'Sub-Affiliate',
+		value: '5%+',
+		text: 'Additional revenue from your affiliate network',
+	},
+	{
+		name: 'Custom Deals',
+		value: 'Up to 65%',
+		text: 'Tailored terms based on your traffic and volume',
+	},
+]
+
+function Card({ tier }) {
+	return (
+		<li className={css.card}>
+			<div className={css.cardHeader}>
+				<h3>{tier.name}</h3>
+				<span className={css.value}>{tier.value}</span>
+			</div>
+			<p>{tier.text}</p>
+		</li>
+	)
+}
+
 export default function Commission() {
 	return (
 		<section id='commission' className={css.commission}>
 			<div className='container'>
-				<h2>Commission Plans</h2>
-				<ul className={css.cards}>
-					<li className={css.card}>
-						<h3>
-							Flexible terms - <br />
-							<span className={css.accent}>your traffic</span>, your rules
-						</h3>
-						<p>
-							We don’t impose strict limits. Let’s agree on what works best for
-							your traffic.
-						</p>
-					</li>
-					<li className={css.card}>
-						<h3>
-							RevShare
-							<br /> from <span className={css.accent}>35%</span> to{' '}
-							<span className={css.accent}>50%</span>
-						</h3>
-						<p>No negative carryover. Every month starts fresh.</p>
-					</li>
-					<li className={css.card}>
-						<h3>
-							Sub-Affiliate <br />
-							<span className={css.accent}>5%+</span>
-						</h3>
-						<p>
-							Earn from your referrals. Build your network and grow your
-							revenue.
-						</p>
-					</li>
-				</ul>
+				<div className={css.copy}>
+					<h2>Commissions and payments</h2>
+					<p>Partner with WiniGreat on terms that work for your business.</p>
+				</div>
+				<div className={css.hub}>
+					<ul className={css.column}>
+						<img
+							src='/connector.svg'
+							alt=''
+							className={css.connectorLeft}
+						/>
+						{leftTiers.map(tier => (
+							<Card key={tier.name} tier={tier} />
+						))}
+					</ul>
+					<div className={css.logoCard}>
+						<span className='logo-frame' style={{ width: 174, height: 61 }}>
+							<img src='/img/logo.png' alt='WiniGreat' />
+						</span>
+					</div>
+					<ul className={css.column}>
+						<img
+							src='/connector.svg'
+							alt=''
+							className={css.connectorRight}
+						/>
+						{rightTiers.map(tier => (
+							<Card key={tier.name} tier={tier} />
+						))}
+					</ul>
+				</div>
 			</div>
 		</section>
 	)
