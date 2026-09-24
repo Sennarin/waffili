@@ -31,13 +31,17 @@ export default function Header() {
 					<div className={css.header___mainBtn}>{navLinks}</div>
 					<div className={css.header___reg_nav}>
 						<Button variant='secondary'>Log in</Button>
-						<Button variant='primary'>Become a Partner</Button>
+						<Button variant='primary' link='/#contact'>
+							Become a Partner
+						</Button>
 					</div>
 					<BurgerButton>
 						<div className={css.header___mainBtnMob}>{navLinks}</div>
 						<div className={css.header___regBtnMob}>
 							<Button variant='secondary'>Log in</Button>
-							<Button variant='primary'>Become a Partner</Button>
+							<Button variant='primary' link='/#contact'>
+								Become a Partner
+							</Button>
 						</div>
 					</BurgerButton>
 				</nav>

@@ -11,7 +11,9 @@ export default function CtaBanner() {
 					<div className={css.content}>
 						<h2>Ready to Grow With WiniGreat?</h2>
 						<p>Partner with WiniGreat on terms that work for your business.</p>
-						<Button size='large'>Become a Partner</Button>
+						<Button size='large' link='/#contact'>
+							Become a Partner
+						</Button>
 					</div>
 				</div>
 			</div>
