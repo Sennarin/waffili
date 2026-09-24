@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import { useState } from 'react'
+import { asset } from '../../../utils/asset'
 import css from './faqAccordion.module.css'
 export default function FaqAccordion({ item }) {
 	const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,7 @@ export default function FaqAccordion({ item }) {
 			>
 				{item.name}
 				<img
-					src='/arrow.svg'
+					src={asset('/arrow.svg')}
 					alt='arrow'
 					width='16'
 					height='18'

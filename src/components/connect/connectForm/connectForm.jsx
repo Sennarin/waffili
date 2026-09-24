@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
+import { asset } from '../../../utils/asset'
 import css from './connectForm.module.css'
 
 // TODO: replace with the real WiniGreat partner-signup API once the backend is live.
@@ -170,14 +171,14 @@ export default function ConnectForm() {
 							>
 								{showPassword ? (
 									<img
-										src='/passwordOn.svg'
+										src={asset('/passwordOn.svg')}
 										alt='Hide'
 										width='16'
 										height='16'
 									/>
 								) : (
 									<img
-										src='/passwordOff.svg'
+										src={asset('/passwordOff.svg')}
 										alt='Show'
 										width='16'
 										height='16'
@@ -207,14 +208,14 @@ export default function ConnectForm() {
 							>
 								{showConfirm ? (
 									<img
-										src='/passwordOn.svg'
+										src={asset('/passwordOn.svg')}
 										alt='Hide'
 										width='16'
 										height='16'
 									/>
 								) : (
 									<img
-										src='/passwordOff.svg'
+										src={asset('/passwordOff.svg')}
 										alt='Show'
 										width='16'
 										height='16'
