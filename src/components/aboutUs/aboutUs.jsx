@@ -1,8 +1,9 @@
+import { asset } from '../../utils/asset'
 import css from './aboutUs.module.css'
 
 const benefits = [
 	{
-		icon: '/img/icon1.png',
+		icon: asset('/img/icon1.png'),
 		text: (
 			<>
 				Fast, Reliable Payouts <br /> That Keep You Moving
@@ -10,11 +11,11 @@ const benefits = [
 		),
 	},
 	{
-		icon: '/img/icon2.png',
+		icon: asset('/img/icon2.png'),
 		text: 'Dedicated Affiliate Manager by Your Side',
 	},
 	{
-		icon: '/img/icon3.png',
+		icon: asset('/img/icon3.png'),
 		text: (
 			<>
 				High Player Retention <br /> for Long-Term Value
@@ -22,7 +23,7 @@ const benefits = [
 		),
 	},
 	{
-		icon: '/img/icon4.png',
+		icon: asset('/img/icon4.png'),
 		text: (
 			<>
 				Access to High-Value <br /> GEOs &amp; Quality Traffic

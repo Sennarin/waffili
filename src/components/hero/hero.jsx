@@ -1,3 +1,4 @@
+import { asset } from '../../utils/asset'
 import Button from '../button/button'
 import css from './hero.module.css'
 
@@ -5,7 +6,11 @@ export default function Hero() {
 	return (
 		<section className={css.hero}>
 			<div className={css.hero__bg}>
-				<img src='/img/hero-bg.png' alt='' className={css.hero__bgImg} />
+				<img
+					src={asset('/img/hero-bg.png')}
+					alt=''
+					className={css.hero__bgImg}
+				/>
 			</div>
 			<div className='container'>
 				<div className={css.hero__inner}>

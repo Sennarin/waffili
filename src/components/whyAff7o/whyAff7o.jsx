@@ -1,3 +1,4 @@
+import { asset } from '../../utils/asset'
 import css from './whyAff7o.module.css'
 
 const stats = [
@@ -12,7 +13,7 @@ export default function WhyAff7o() {
 			<div className='container'>
 				<div className={css.inner}>
 					<div className={css.globe}>
-						<img src='/img/globe.png' alt='' />
+						<img src={asset('/img/globe.png')} alt='' />
 					</div>
 					<div className={css.content}>
 						<h2>

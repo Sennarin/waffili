@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../../utils/asset'
 import Button from '../button/button'
 import BurgerButton from '../burgerButton/burgerButton'
 import css from './header.module.css'
@@ -24,7 +25,7 @@ export default function Header() {
 				<nav className={css.header___nav}>
 					<Link to='/' className={css.header___logo}>
 						<span className='logo-frame' style={{ width: 136, height: 47 }}>
-							<img src='/img/logo.png' alt='WiniGreat' />
+							<img src={asset('/img/logo.png')} alt='WiniGreat' />
 						</span>
 					</Link>
 					<div className={css.header___mainBtn}>{navLinks}</div>

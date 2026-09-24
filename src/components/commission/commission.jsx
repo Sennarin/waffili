@@ -1,3 +1,4 @@
+import { asset } from '../../utils/asset'
 import css from './commission.module.css'
 
 const leftTiers = [
@@ -49,7 +50,7 @@ export default function Commission() {
 				<div className={css.hub}>
 					<ul className={css.column}>
 						<img
-							src='/connector.svg'
+							src={asset('/connector.svg')}
 							alt=''
 							className={css.connectorLeft}
 						/>
@@ -59,12 +60,12 @@ export default function Commission() {
 					</ul>
 					<div className={css.logoCard}>
 						<span className='logo-frame' style={{ width: 174, height: 61 }}>
-							<img src='/img/logo.png' alt='WiniGreat' />
+							<img src={asset('/img/logo.png')} alt='WiniGreat' />
 						</span>
 					</div>
 					<ul className={css.column}>
 						<img
-							src='/connector.svg'
+							src={asset('/connector.svg')}
 							alt=''
 							className={css.connectorRight}
 						/>
