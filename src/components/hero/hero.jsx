@@ -28,7 +28,9 @@ export default function Hero() {
 							tailored promotions.
 						</p>
 					</div>
-					<Button size='large'>Become a Partner</Button>
+					<Button size='large' link='/#contact'>
+					Become a Partner
+				</Button>
 				</div>
 			</div>
 		</section>
