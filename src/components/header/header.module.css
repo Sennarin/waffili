@@ -1,5 +1,6 @@
 .header {
 	width: 100%;
+	background-color: var(--color-bg);
 }
 
 .header___nav {
@@ -8,6 +9,7 @@
 	align-items: center;
 	padding: 9px 0;
 	font-size: 14px;
+	font-family: var(--font-body);
 	@media screen and (min-width: 768px) {
 		justify-content: baseline;
 	}
@@ -41,39 +43,13 @@
 		gap: 32px;
 		align-items: center;
 		a {
-			color: white;
+			color: var(--color-white);
 			transition: color 250ms linear;
 			&:hover,
 			&:focus {
-				color: #6b2ea1;
+				color: var(--color-accent);
 			}
 		}
-	}
-}
-
-.header___btnLog {
-	color: white;
-	transition: color 250ms linear;
-	&:hover,
-	&:focus {
-		color: #6b2ea1;
-	}
-}
-
-.header___regBtn {
-	color: white;
-	border: 1px solid #ff2ea1;
-	background-color: #ff2ea1;
-	border-radius: 34px;
-	padding: 8px 16px;
-	font-weight: 600;
-	transition: all 250ms linear;
-	color: white;
-	&:hover,
-	&:focus {
-		background-color: #6b2ea1;
-		box-shadow: 0 0 10px #ff2ea1, 0 0 20px #ff2ea1;
-		color: white;
 	}
 }
 
@@ -88,11 +64,11 @@
 		text-decoration: none;
 
 		height: min-content;
-		color: white;
+		color: var(--color-white);
 		transition: color 250ms linear;
 		&:hover,
 		&:focus {
-			color: #6b2ea1;
+			color: var(--color-accent);
 		}
 	}
 }

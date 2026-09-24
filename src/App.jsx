@@ -16,7 +16,7 @@ export default function App() {
 			<ToastContainer
 				position='top-right'
 				autoClose={2000}
-				toastStyle={{ backgroundColor: '#1b191a', color: '#fff' }}
+				toastStyle={{ backgroundColor: 'var(--color-surface-alt)', color: 'var(--color-white)' }}
 			/>
 
 			<Header />

@@ -1,63 +1,66 @@
 .contact {
+	position: relative;
+	overflow: hidden;
 	padding: 60px 0;
 	display: flex;
 	flex-direction: column;
-	background-image: url('/img/formBg.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-color: var(--color-bg);
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
 	}
 }
 
+.bgImg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
 .container__inner {
+	position: relative;
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
-	@media screen and (min-width: 1140px) {
-		flex-direction: row;
-		justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	@media screen and (min-width: 768px) {
+		gap: 40px;
 	}
 }
 
 .contact__info {
 	text-align: center;
-	color: white;
-	margin-bottom: 32px;
-	@media screen and (min-width: 1140px) {
-		text-align: start;
-		margin-bottom: 0;
-	}
+	color: var(--color-white);
+	max-width: 516px;
 	h2 {
-		font-size: 42px;
-		font-weight: 400;
-		margin-bottom: 8px;
-	}
-
-	p {
-		padding-bottom: 24px;
-	}
-	a {
-		margin: 0 auto;
-		@media screen and (min-width: 1140px) {
-			margin: 0;
+		font-family: var(--font-heading);
+		font-weight: 500;
+		font-size: 28px;
+		text-transform: capitalize;
+		margin-bottom: 16px;
+		@media screen and (min-width: 768px) {
+			font-size: 34px;
 		}
 	}
 }
 
 .contact__links {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	width: fit-content;
 	justify-content: center;
-	gap: 18px;
-	margin: 0 auto 24px;
-	@media screen and (min-width: 1140px) {
-		margin: 0 0 24px;
-	}
+	gap: 16px 24px;
+	margin: 0 auto;
 	a {
 		display: flex;
+		align-items: center;
 		gap: 8px;
+		font-family: var(--font-heading);
+		font-weight: 500;
+		font-size: 14px;
 	}
 }
 

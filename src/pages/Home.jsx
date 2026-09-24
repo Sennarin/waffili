@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import AboutUs from '../components/aboutUs/aboutUs'
 import Commission from '../components/commission/commission'
 import Connect from '../components/connect/connect'
+import CtaBanner from '../components/ctaBanner/ctaBanner'
 import FAQ from '../components/faq/faq'
 import Hero from '../components/hero/hero'
 import WhyAff7o from '../components/whyAff7o/whyAff7o'
@@ -24,8 +25,9 @@ export default function Home() {
 		<main>
 			<Hero />
 			<WhyAff7o />
-			<Commission />
 			<AboutUs />
+			<Commission />
+			<CtaBanner />
 			<FAQ />
 			<Connect />
 		</main>

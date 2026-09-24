@@ -1,6 +1,8 @@
 .footer {
 	width: 100%;
 	padding: 60px 0;
+	background-color: var(--color-bg);
+	font-family: var(--font-body);
 }
 
 .footer___nav {
@@ -41,11 +43,11 @@
 		font-size: 14px;
 		text-decoration: none;
 		height: min-content;
-		color: white;
+		color: var(--color-white);
 		transition: color 250ms linear;
 		&:hover,
 		&:focus {
-			color: #6b2ea1;
+			color: var(--color-accent);
 		}
 	}
 }

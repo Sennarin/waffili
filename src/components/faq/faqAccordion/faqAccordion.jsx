@@ -20,17 +20,19 @@ export default function FaqAccordion({ item }) {
 			</button>
 
 			<div className={clsx(css.accordion_content, { [css.open]: isOpen })}>
-				<p>Depending on your traffic, we offer:</p>
 				{item.text ? (
 					<p>{item.text}</p>
 				) : (
-					<ul>
-						<li>RevShare: 35%–50% of NGR</li>
-						<li>CPA: Fixed payout per registration</li>
-						<li>
-							Hybrid: Combine RevShare + CPA for a stable, scalable income
-						</li>
-					</ul>
+					<>
+						<p>Depending on your traffic, we offer:</p>
+						<ul>
+							<li>RevShare: 35%–50% of NGR</li>
+							<li>CPA: Fixed payout per registration</li>
+							<li>
+								Hybrid: Combine RevShare + CPA for a stable, scalable income
+							</li>
+						</ul>
+					</>
 				)}
 			</div>
 		</div>

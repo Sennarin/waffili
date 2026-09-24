@@ -1,10 +1,15 @@
 .faq {
 	padding: 60px 0;
 	h2 {
-		font-size: 32px;
-		font-weight: 400;
-		color: white;
+		font-family: var(--font-heading);
+		font-weight: 500;
+		font-size: 28px;
+		text-transform: capitalize;
+		color: var(--color-white);
 		margin-bottom: 24px;
+		@media screen and (min-width: 768px) {
+			font-size: 34px;
+		}
 	}
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
@@ -16,4 +21,22 @@
 	flex-direction: column;
 	gap: 24px;
 	margin-bottom: 24px;
+}
+
+.faq__cta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	background-color: var(--color-surface);
+	border-radius: 16px;
+	padding: 24px;
+}
+
+.faq__cta p {
+	font-family: var(--font-heading);
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--color-white);
 }

@@ -5,15 +5,15 @@
 	border-radius: 100%;
 	padding: 10px 20px;
 	font-size: 16px;
-	color: white;
+	color: var(--color-white);
 	z-index: 1000;
-	background-color: #1b191a;
+	background-color: var(--color-surface-alt);
 	cursor: pointer;
 	transition: all 250ms ease;
 
 	&:focus,
 	&:hover {
-		background-color: #ef97e8;
-		box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8;
+		background-color: var(--color-primary);
+		box-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
 	}
 }

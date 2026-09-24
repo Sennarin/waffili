@@ -1,17 +1,16 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	background-color: #101112;
-	border: 1px solid #0b0b0c;
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-black);
 	border-radius: 24px;
 	padding: 60px 40px;
 	gap: 24px;
+	font-family: var(--font-body);
 
+	width: 100%;
+	max-width: 536px;
 	margin: 0 auto;
-	@media screen and (min-width: 1140px) {
-		max-width: 580px;
-		margin: 0;
-	}
 }
 
 .row {
@@ -29,28 +28,22 @@
 }
 .labelText {
 	font-size: 14px;
-	color: white;
+	color: var(--color-white);
 	margin-bottom: 4px;
 }
 
 .input {
 	width: 100%;
-	border: 1px solid #1b191a;
+	border: none;
 	font-size: 14px;
-	border-radius: 34px;
-	padding: 12px 24px;
-	background: #0b0b0c;
-	color: white;
-}
-
-.checkbox {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
+	border-radius: 12px;
+	padding: 12px 16px;
+	background: var(--color-surface-alt);
+	color: var(--color-white);
 }
 
 .error {
-	color: red;
+	color: #ff6b6b;
 	font-size: 0.8rem;
 }
 
@@ -94,12 +87,12 @@
 	width: 16px;
 	min-width: 16px;
 	height: 16px;
-	border: 1px solid #aaa;
+	border: 1px solid var(--color-grey);
 	border-radius: 4px;
 	position: relative;
 }
 .checkboxInput:checked + .customCheckbox {
-	background-color: #ff2ea1;
+	background-color: var(--color-primary);
 	border: none;
 }
 .checkboxInput:checked + .customCheckbox::after {
@@ -109,7 +102,7 @@
 	top: 12%;
 	font-size: 14px;
 	line-height: 100%;
-	color: white;
+	color: var(--color-white);
 }
 
 .button {
@@ -117,17 +110,18 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	padding: 16px 24px;
-	color: white;
-	border: 1px solid #ff2ea1;
-	background-color: #ff2ea1;
-	font-weight: 600;
+	padding: 13px 16px;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	font-family: var(--font-heading);
+	font-weight: 500;
+	text-transform: capitalize;
 	border-radius: 34px;
 	cursor: pointer;
-	transition: all 250ms ease;
+	transition: filter 250ms ease, box-shadow 250ms ease;
 	&:focus,
 	&:hover {
-		background-color: #6b2ea1;
-		box-shadow: 0 0 10px #ff2ea1, 0 0 20px #ff2ea1;
+		filter: brightness(1.15);
+		box-shadow: 0 0 16px rgba(98, 25, 157, 0.6);
 	}
 }

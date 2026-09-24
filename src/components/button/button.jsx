@@ -1,16 +1,19 @@
-import Icon from '../../assets/play.svg?react'
-import IconQuestion from '../../assets/questions.svg?react'
+import clsx from 'clsx'
 import css from './button.module.css'
+
 export default function Button({
-	icon,
-	link = 'https://admin.aff7o.com/partner/register',
+	variant = 'primary',
+	size,
+	link = '#',
+	className,
 	children,
 }) {
 	return (
-		<a href={link} className={css.button}>
+		<a
+			href={link}
+			className={clsx(css.button, css[variant], size === 'large' && css.large, className)}
+		>
 			{children}
-
-			{icon ? <IconQuestion /> : <Icon />}
 		</a>
 	)
 }

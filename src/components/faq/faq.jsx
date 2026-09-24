@@ -5,7 +5,7 @@ import FaqAccordion from './faqAccordion/faqAccordion'
 export default function FAQ() {
 	const faqItems = [
 		{
-			name: 'Why choose Aff7o Affiliates?',
+			name: 'Why choose WiniGreat Affiliates?',
 			text: 'We promote our own brands – not third-party casinos. That means all the benefits are fully accessible to you as a partner. Join today and get full support from your manager.',
 		},
 		{
@@ -31,9 +31,10 @@ export default function FAQ() {
 						<FaqAccordion key={index} item={item} />
 					))}
 				</ul>
-				<Button icon link='https://t.me/aff_7oasis'>
-					Still Have questions?
-				</Button>
+				<div className={css.faq__cta}>
+					<p>Still have questions?</p>
+					<Button link='https://t.me/johnnyquid4'>Ask a manager</Button>
+				</div>
 			</div>
 		</section>
 	)

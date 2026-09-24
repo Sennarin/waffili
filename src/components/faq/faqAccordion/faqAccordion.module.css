@@ -1,6 +1,6 @@
 .accordion {
 	width: 100%;
-	background-color: #101112;
+	background-color: var(--color-surface);
 	border-radius: 16px;
 }
 
@@ -10,9 +10,10 @@
 	text-align: left;
 	width: 100%;
 	cursor: pointer;
+	font-family: var(--font-body);
 	font-size: 18px;
 	padding: 24px;
-	color: white;
+	color: var(--color-white);
 }
 .accordion_button.open {
 	padding: 24px 24px 10px;
