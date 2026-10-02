@@ -5,7 +5,7 @@ import ConnectForm from './connectForm/connectForm'
 export default function Connect() {
 	return (
 		<section id='contact' className={css.contact}>
-			<img src={asset('/img/contact-bg.png')} alt='' className={css.bgImg} />
+			<img src={asset('/img/contact-bg.webp')} alt='' className={css.bgImg} />
 			<div className='container'>
 				<div className={css.container__inner}>
 					<div className={css.contact__info}>
