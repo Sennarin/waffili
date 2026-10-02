@@ -1,6 +1,7 @@
 import { asset } from '../../utils/asset'
+import { SIGNUP_URL } from '../../utils/links'
+import Button from '../button/button'
 import css from './connect.module.css'
-import ConnectForm from './connectForm/connectForm'
 
 export default function Connect() {
 	return (
@@ -21,7 +22,9 @@ export default function Connect() {
 							</a>
 						</div>
 					</div>
-					<ConnectForm />
+					<Button size='large' link={SIGNUP_URL}>
+						Become a Partner
+					</Button>
 				</div>
 			</div>
 		</section>
