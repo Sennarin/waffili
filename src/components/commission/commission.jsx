@@ -60,7 +60,7 @@ export default function Commission() {
 					</ul>
 					<div className={css.logoCard}>
 						<span className='logo-frame' style={{ width: 174, height: 61 }}>
-							<img src={asset('/img/logo.png')} alt='WiniGreat' />
+							<img src={asset('/img/logo.webp')} alt='WiniGreat' />
 						</span>
 					</div>
 					<ul className={css.column}>

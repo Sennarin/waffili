@@ -1,4 +1,5 @@
 import { asset } from '../../utils/asset'
+import { SIGNUP_URL } from '../../utils/links'
 import Button from '../button/button'
 import css from './hero.module.css'
 
@@ -7,7 +8,7 @@ export default function Hero() {
 		<section className={css.hero}>
 			<div className={css.hero__bg}>
 				<img
-					src={asset('/img/hero-bg.png')}
+					src={asset('/img/hero-bg.webp')}
 					alt=''
 					className={css.hero__bgImg}
 				/>
@@ -28,7 +29,7 @@ export default function Hero() {
 							tailored promotions.
 						</p>
 					</div>
-					<Button size='large' link='/#contact'>
+					<Button size='large' link={SIGNUP_URL}>
 					Become a Partner
 				</Button>
 				</div>

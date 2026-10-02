@@ -3,7 +3,7 @@ import css from './aboutUs.module.css'
 
 const benefits = [
 	{
-		icon: asset('/img/icon1.png'),
+		icon: asset('/img/icon1.webp'),
 		text: (
 			<>
 				Fast, Reliable Payouts <br /> That Keep You Moving
@@ -11,11 +11,11 @@ const benefits = [
 		),
 	},
 	{
-		icon: asset('/img/icon2.png'),
+		icon: asset('/img/icon2.webp'),
 		text: 'Dedicated Affiliate Manager by Your Side',
 	},
 	{
-		icon: asset('/img/icon3.png'),
+		icon: asset('/img/icon3.webp'),
 		text: (
 			<>
 				High Player Retention <br /> for Long-Term Value
@@ -23,7 +23,7 @@ const benefits = [
 		),
 	},
 	{
-		icon: asset('/img/icon4.png'),
+		icon: asset('/img/icon4.webp'),
 		text: (
 			<>
 				Access to High-Value <br /> GEOs &amp; Quality Traffic
