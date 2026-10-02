@@ -26,11 +26,11 @@ export default function FAQ() {
 		<section id='FAQ' className={css.faq}>
 			<div className='container'>
 				<h2>FAQs</h2>
-				<ul className={css.faq__accordion}>
+				<div className={css.faq__accordion}>
 					{faqItems.map((item, index) => (
 						<FaqAccordion key={index} item={item} />
 					))}
-				</ul>
+				</div>
 				<div className={css.faq__cta}>
 					<p>Still have questions?</p>
 					<Button link='https://t.me/johnnyquid4'>Ask a manager</Button>
