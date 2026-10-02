@@ -3,7 +3,7 @@ import css from './whyAff7o.module.css'
 
 const stats = [
 	{ value: '1000+', label: 'Active Players' },
-	{ value: '6', label: 'Key Markets' },
+	{ value: '3', label: 'Key Markets' },
 	{ value: '50', label: 'Active Partners' },
 ]
 

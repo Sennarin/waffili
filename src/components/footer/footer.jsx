@@ -20,19 +20,9 @@ export default function Footer() {
 		<footer className={css.footer}>
 			<div className='container'>
 				<nav className={css.footer___nav}>
-					<div className={css.footer___logoDiv}>
-						<Link to='/' className='logo-frame' style={{ width: 142, height: 50 }}>
-							<img src={asset('/img/logo.webp')} alt='WiniGreat' />
-						</Link>
-						<a href='https://www.slotscalendar.com'>
-							<img
-								src={asset('/img/sclogo.webp')}
-								alt='Sclogo'
-								width='250'
-								height='65'
-							/>
-						</a>
-					</div>
+					<Link to='/' className='logo-frame' style={{ width: 142, height: 50 }}>
+						<img src={asset('/img/logo.webp')} alt='WiniGreat' />
+					</Link>
 					<div className={css.footer___mainBtn}>
 						{navLinks}
 						<Link to='/terms_and_conditions'>Terms &amp; Conditions</Link>

@@ -12,23 +12,6 @@
 	align-items: center;
 	padding: 60px 0;
 }
-.footer___logoDiv {
-	display: flex;
-	gap: 16px;
-	flex-direction: column;
-	align-items: center;
-	@media screen and (min-width: 768px) {
-		flex-direction: row;
-		gap: 32px;
-	}
-}
-
-.footer___logo {
-	height: min-content;
-	display: flex;
-	align-items: center;
-}
-
 .footer___mainBtn {
 	display: flex;
 	flex-direction: column;
