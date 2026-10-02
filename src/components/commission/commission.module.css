@@ -39,8 +39,17 @@
 	align-items: center;
 	gap: 24px;
 	width: 100%;
+	@media screen and (min-width: 600px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-auto-flow: column;
+		align-items: stretch;
+	}
 	@media screen and (min-width: 1140px) {
+		display: flex;
 		flex-direction: row;
+		align-items: center;
 		justify-content: center;
 		gap: 0;
 	}
@@ -53,7 +62,11 @@
 	gap: 24px;
 	width: 100%;
 	max-width: 340px;
+	@media screen and (min-width: 600px) {
+		display: contents;
+	}
 	@media screen and (min-width: 1140px) {
+		display: flex;
 		gap: 40px;
 	}
 }
