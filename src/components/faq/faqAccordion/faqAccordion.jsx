@@ -15,7 +15,7 @@ export default function FaqAccordion({ item }) {
 					src={asset('/arrow.svg')}
 					alt='arrow'
 					width='16'
-					height='18'
+					height='9'
 					className={clsx(css.arrow, { [css.open]: isOpen })}
 				/>
 			</button>
