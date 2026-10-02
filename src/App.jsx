@@ -7,18 +7,9 @@ import Home from './pages/Home'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
 export default function App() {
 	return (
 		<>
-			<ToastContainer
-				position='top-right'
-				autoClose={2000}
-				toastStyle={{ backgroundColor: 'var(--color-surface-alt)', color: 'var(--color-white)' }}
-			/>
-
 			<Header />
 
 			<Routes>
