@@ -24,7 +24,7 @@
 .arrow {
 	display: inline-block;
 	flex-shrink: 0;
-	margin-top: 5px;
+	margin-top: 9px;
 	transition: transform 250ms ease;
 }
 
