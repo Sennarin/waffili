@@ -17,13 +17,16 @@ export default function PrivacyPolicy() {
 						Website”).
 					</p>
 					<p>
-						Any reference to “wgraff.com,” “us,” “we,” or “our” includes
-						WiniGreat, a company owned and operated byS ilent Signal Systems
-						Group Limited, a company incorporated under the laws of Hong Kong,
-						reg. no 78041808, having its registered office at Unit C, 8/F, King
-						Palace Plaza No. 55 King Yip Street, Kwun Tong, Kowloon, Hong Kong
-						You will be required to provide your license number and address,
-						which can be copied from the product site.
+						Any reference to “wgraff.com,” “WiniGreat,” “us,” “we,” or “our” refers to VINNIGREAT LIMITED, registration number 139105, having its registered address at Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Marshall Islands MH 96960.
+					</p>
+					<p>
+						WiniGreat.com is owned and operated by VINNIGREAT LIMITED.
+					</p>
+					<p>
+						WiniGreat.com operates under a license issued by the Government of the Autonomous Island of Anjouan, Union of Comoros, License No. ALSI-202607054-FI2.
+					</p>
+					<p>
+						WiniGreat.com has passed the applicable regulatory compliance requirements and is legally authorized under its license to conduct gaming operations for games of chance and wagering.
 					</p>
 					<p>
 						We securely protect your sensitive data. Any information you provide
