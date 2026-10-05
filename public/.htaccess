@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-
-	# Single-page app: serve index.html for any path that isn't a real file or folder
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^ index.html [L]
-</IfModule>
